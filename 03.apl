@@ -2,10 +2,9 @@
 lines←⊃⎕NGET'03.txt'1
 banks←⍎¨¨lines
 max←{
- n digits←2↑⍺,⊂⍬
- 0=n:10⊥digits
- digit←⌈/⍵↓⍨1-n
- (n-1)(digits,digit)∇⍵↓⍨⍵⍳digit
+ digit←⌈/⍵↓⍨1-⍺
+ 1=⍺:digit
+ digit,(⍺-1)∇⍵↓⍨⍵⍳digit
 }
-⎕←+/ 2∘max¨banks
-⎕←+/12∘max¨banks
+⎕←10⊥+⌿↑ 2∘max¨banks
+⎕←10⊥+⌿↑12∘max¨banks
