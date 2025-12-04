@@ -1,2 +1,4 @@
 map←'@'=⊃⎕NGET'04.txt'2
-⎕←+/,(⊢∧4≥{+/,⍵}⌺3 3)map
+reachable←⊢∧4≥{+/,⍵}⌺3 3
+⎕←+/,reachable map
+⎕←+/,(⊢-(⊢-reachable)⍣≡)map
