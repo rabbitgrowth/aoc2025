@@ -1,6 +1,5 @@
 ⎕PP←34
-lines←⊃⎕NGET'03.txt'2
-banks←⍎¨lines
+banks←⍎¨⊃⎕NGET'03.txt'2
 max←{
  digit←⌈/⍵↓⍨1-⍺
  1=⍺:digit
