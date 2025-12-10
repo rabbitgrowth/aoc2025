@@ -9,6 +9,6 @@ jolts  ←(⍎⊃∘⌽)                       ¨words
  button jolt←⍺⍵
  0{
   jolt⊂⍛∊⍵:⍺
-  (1+⍺)∇∧.≤∘jolt¨⍛/,button∘.+⍵
+  (1+⍺)∇∪∧.≤∘jolt¨⍛/,button∘.+⍵
  }⊂0×⍵
 }¨jolts
