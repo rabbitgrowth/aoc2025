@@ -14,4 +14,4 @@ merge←{
 ranges←⊃merge/(⊂0 1)+(⍎¨'-'∘≠⊆⊢)¨p1
 ids←⍎¨p2
 ⎕←+/2|ranges⍸ids
-⎕←+/-⍨/(⊢⍴⍨2,⍨2÷⍨≢)ranges
+⎕←+/-/⌽ranges
