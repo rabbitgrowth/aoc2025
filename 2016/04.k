@@ -4,6 +4,6 @@ parse:{(name;cksum):"["\-1_x
  (-1_words;`I$*|words;cksum)}
 (names;ids;cksums):+parse'rooms
 cksum:{5#>#'={x@<x}@,/x}
-+/ids@&cksums~'cksum'names
++/ids*cksums~'cksum'names
 real:" "/'`c$"a"+26!ids+names-"a"
 ids@real?"northpole object storage"
