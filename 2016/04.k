@@ -1,9 +1,3 @@
-rooms:0:"04.txt"
-parse:{(name;cksum):"["\-1_x
- words:"-"\name
- (-1_words;`I$*|words;cksum)}
-(names;ids;cksums):+parse'rooms
-cksum:{5#>#'={x@<x}@,/x}
-+/ids*cksums~'cksum'names
-real:" "/'`c$"a"+26!ids+names-"a"
-ids@real?"northpole object storage"
+(n;i;c):+{(l;r):"["\-1_x;w:"-"\l;(-1_w;`I$*|w;r)}'0:"04.txt"
++/i*c~'{5#>#'={x@<x}@,/x}'n
+i@(" "/'`c$"a"+26!i+n-"a")?"northpole object storage"
